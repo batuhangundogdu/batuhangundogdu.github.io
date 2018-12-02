@@ -1,6 +1,6 @@
-# koloysparis
+# Sepet App
 
-> A Vue.js project
+> Sepet uygulaması'nın Market'ler için kontrol paneli.
 
 ## Build Setup
 
