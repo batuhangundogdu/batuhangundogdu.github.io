@@ -127,7 +127,14 @@
             </div>
             <div class="row contact-wrap">
                 <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="POST" action="sendemail.php">
+                <form method="POST" id="myForm" action="sendemail.php">
+                  <input type="text" name="sender_name" placeholder="Name" required="">
+                  <input type="text" name="sender_email" placeholder="Email" required="">
+                  <input type="text" name="subject" placeholder="Subject" required="">
+                  <textarea placeholder="Message" name="message" required=""></textarea>
+                  <input type="submit" name="send" value="SEND">
+                </form>
+                <!-- <form id="main-contact-form" class="contact-form" name="contact-form" method="POST" action="sendemail.php">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
                             <label>İsim *</label>
@@ -156,10 +163,10 @@
                             <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Mesajınızı Yollayın</button>
+                            <button type="submit" name="send" value="SEND" class="btn btn-primary btn-lg" required="required">Mesajınızı Yollayın</button>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#contact-page-->
