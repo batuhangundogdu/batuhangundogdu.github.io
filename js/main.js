@@ -54,10 +54,11 @@ jQuery(function($) {'use strict',
           console.log('error', error);
       },
 			beforeSend: function(){
+        console.log('beforeSend');
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-      console.log('data:', data);
+      console.log('done, data:', data);
 			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
 		});
 	});
