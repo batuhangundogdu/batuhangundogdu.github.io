@@ -44,21 +44,12 @@ jQuery(function($) {'use strict',
 		event.preventDefault();
 		var form_status = $('<div class="form_status"></div>');
 		$.ajax({
-      url: $(this).attr('action'),
-      success: function(response) {
-        alert('success', response.success);
-      },
-      error: function(xhr, status, error){
-          console.log('xhr:', xhr);
-          console.log('status', status);
-          console.log('error', error);
-      },
+			url: $(this).attr('action'),
+
 			beforeSend: function(){
-        console.log('beforeSend');
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-      console.log('done, data:', data);
 			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
 		});
 	});
