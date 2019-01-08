@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>İletişim | SMG GIDA</title>
+
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <script type="text/javascript">
+        function scrollTo() {
+            $('html, body').animate({ scrollTop: $('#feature').offset().top }, 'slow');
+            return false;
+        }
+    </script>
+    <script type="text/javascript">
+        function scrollTo2() {
+            $('html, body').animate({ scrollTop: $('#recent-works').offset().top }, 'slow');
+            return false;
+        }
+    </script>
+</head><!--/head-->
+
+<body>
+
+    <header id="header">
+
+       <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="index.html" style="
+                    padding-bottom: 0px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    padding-top: 0px;
+                    ">
+                      <img src="images/logo.jpg" alt="logo" height="120px" width="213px"  >
+                    </a> -->
+                </div>
+
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-left" style="
+                      margin-top: 50px;
+                      ">
+                      <li><a href="index.html">Anasayfa</a></li>
+                      <li><a href="index.html#feature" onclick="scrollTo()">Hakkımızda</a></li>
+                      <li><a href="index.html#recent-works" onclick="scrollTo3()">Galeri</a></li>
+                      <li><a href="portfolio.html">Markalar</a></li>
+                      <li class="active"><a href="contact-us.html">İletişim</a></li>
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right" style="
+                      margin-top: 50px;
+                      ">
+                     <li class="active"><a href="#">TR</a></li>
+                     <li><a href="contact-us-en.html">EN</a></li>
+                  </ul>
+
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+
+    </header><!--/header-->
+
+    <section id="contact-info">
+        <div class="center">
+            <h2>Nasıl yardımcı olabiliriz?</h2>
+            <p class="lead">Bize Ulaşın</p>
+        </div>
+        <div class="gmap-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center">
+                        <div class="gmap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.3368199492104!2d28.845168165536347!3d41.01455713250521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4c7ad1cf93b%3A0xc900db2424649c7!2sKocasinan+Merkez+Mahallesi%2C+Marmara+Cd.+No%3A32%2C+34186+Bah%C3%A7elievler%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1545858220193" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 map-content">
+                        <ul class="row">
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>Merkez</h5>
+                                    <p>KOCASİNAN MERKEZ MAHALLESİ<br>
+                                        MARMARA CAD. NO:37/B
+                                        BAHÇELİEVLER / İSTANBUL</p>
+                                    <p>Telefon : +90 212 630 34 63<br>
+                                    Email Adresi: info@smggida.com</p>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <!--/gmap_area -->
+
+    <section id="contact-page">
+        <div class="container">
+            <div class="center">
+                <h2>Mesaj yazın</h2>
+                <p class="lead">En kısa zamanda dönüş yapılacaktır.</p>
+            </div>
+            <div class="row contact-wrap">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>İsim *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefon</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Şirket Adı</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Konu *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Mesaj *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Mesajınızı Yollayın</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
+
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="widget">
+                        <h3>İLETİŞİM</h3>
+                        <ul>
+                          <li>KOCASİNAN MERKEZ MAHALLESİ</li>
+                          <li>MARMARA CAD.</li>
+                          <li>NO:37/B</li>
+                          <li>BAHÇELİEVLER / İSTANBUL</li>
+                          <li>İstanbul
+                          <li>Telefon : +90 212 630 34 63</li>
+                          <li>E-mail : info@smggida.com</li>
+
+
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <!-- <div class="col-md-6 col-sm-6">
+                    <div class="widget">
+                        <h3>map</h3>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12044.239785832919!2d28.8655059!3d41.0020611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xf43140922e4df7a3!2zw5Ztw7xyIFBsYXph!5e0!3m2!1str!2s!4v1437014199449" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>/.col-md-3 -->
+
+
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2018 <a target="_blank" href="http://smggida.com/" title="SMG TEKSTİL GIDA İNŞAAT LTD. ŞTİ.">SMG GIDA</a>. Bütün hakları saklıdır.
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
