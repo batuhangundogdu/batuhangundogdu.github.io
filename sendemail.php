@@ -1,12 +1,12 @@
 <?php
-  log("i'm in php");
+  echo ("i'm in php");
 	header('Content-type: application/json');
 	$status = array(
 		'type'=>'success',
 		'message'=>'Thank you for contact us. As early as possible  we will contact you '
   );
 
-  log("status -> $status");
+  echo ("status -> $status");
 
     $name = @trim(stripslashes($_POST['name']));
     $email = @trim(stripslashes($_POST['email']));
@@ -18,14 +18,14 @@
 
     $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 
-    log("body -> $body");
+    echo ("body -> $body");
 
     if(@mail($email_to, $subject, $body, 'From: <'.$email_from.'>')) {
+      echo ("mail success php");
       echo json_encode($status);
-      log("mail success php");
     } else {
+      echo ("mail ERROR php");
       echo json_encode(['success'=>false]);
-      log("mail ERROR php");
     }
     die;
 ?>
